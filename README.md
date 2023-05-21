@@ -1,36 +1,34 @@
-## ToyTroop Universe
+## Chef's Toybox
 
-## Live Website link:  https://toy-store-client.web.app/
+## Live Website link: https://assignment-11-client-a222c.web.app
 
-ToyTroop Universe is a web application of action figure toys where users can add toys and see toys.
 
 ### Features:
 
-1) User authentication-- Without Login user can see the home page and All Toys Section but can't view the details of a toy or add a toy and my toys.If user try to see the private routes he/she will be directed to login page with an alert.
+1.User Authentication:
+The application allows users to access the home page and view the All Toys section without requiring login. However, to view the details of a specific toy or add a toy to their collection, users need to be authenticated. If an unauthenticated user attempts to access these private routes, they will be redirected to the login page with an alert prompting them to log in.
 
-2) Navbar - with a logo and website name, Home, Blogs, AllToys, MyToys, AddAToy, profile img(tooltip when hover (name show)), ( login,logout(conditional) )
+2.Navbar:
+The application features a navigation bar that includes a logo and the website name. The navbar also provides links to various sections of the website, such as Home, Blogs, All Toys, My Toys, Add a Toy, and the user's profile image with a tooltip displaying their name. The login and logout options are conditionally displayed based on the user's authentication status.
 
-3) Footer -  a logo and website name, Contact Info, Follow US
+3.Footer:
+The footer of the website includes a logo and the website name. It also contains contact information and links to follow the website on various social media platforms.
 
-4) HomePage - there is a slider , Gallery (AOS - design added when scroll), category section where all action figures are categorized and also added a view details button that will show the details of a categorized action figure toys detail for loggedin user (details option is a private route), popular toys section, banner section added ( AOS - design added when scroll)
+4.Home Page:
+The home page of the application comprises a slider, a gallery section with scroll animations (utilizing AOS library), a category section where action figure toys are categorized. Each categorized action figure toy has a "View Details" button that allows authenticated users to view the detailed information of the toy. Additionally, there is a popular toys section and a banner section with scroll animations (using AOS library).
 
-5) Add A Toy - logged in user can add a toy.
+5.Add a Toy:
+Authenticated users have the ability to add a new toy to the collection by accessing the "Add a Toy" feature.
 
-6) My Toys - logged in user can see only the toys he/she added but can't see other user's  added toys. Here user can sort by price (dropdown button) by ASC and DESC.
-Also User can update and delete the data that he or she added.
+6.My Toys:
+Authenticated users can view a list of toys that they have added to their collection in the "My Toys" section. They cannot view toys added by other users. Within this section, users have the option to sort the toys by price (ascending or descending) using a dropdown button. Furthermore, users can update and delete the information of the toys they have added.
 
-7) All Toys - Here all toys will be shown with tabular form that are added by all the users. Here a search options created and a limit option which can choose a user, but default value 20. 
+7.All Toys:
+The "All Toys" section displays a tabular representation of all toys added by all users. A search option is available to filter the toys based on user-defined criteria. Additionally, users can choose a limit for the number of toys displayed, with a default value of 20.
 
-8) For CRUD options sweet alert added. 
+8.CRUD Options and Sweet Alert:
+The application incorporates Sweet Alert for a visually appealing user experience when performing Create, Read, Update, and Delete (CRUD) operations on the toys.
 
-9)  Blogs - Here some question and answers.
+9.Blogs:
+The "Blogs" section consists of a collection of questions and answers related to the topic of interest.
 
-
-### Tools used:
-
-React.js,
-Firebase Authentication,
-MongoDB,
-React Router DOM,
-Node.js,
-Express.js
