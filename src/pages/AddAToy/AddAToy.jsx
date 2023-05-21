@@ -34,7 +34,7 @@ const AddAToy = () => {
     console.log(newToy);
 
     // Send data to the server
-    fetch("http://localhost:5000/myCooks", {
+    fetch("https://assignment-11-server-two-ecru.vercel.app/myCooks", {
       method: "POST",
       headers: {
         "content-type": "application/json",

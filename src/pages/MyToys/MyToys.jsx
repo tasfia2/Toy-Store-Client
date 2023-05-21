@@ -28,7 +28,7 @@ const MyToys = () => {
     }).then((result) => {
       if (result.isConfirmed) {
         // Delete the toy
-        fetch(`http://localhost:5000/myCooks/${toyId}`, {
+        fetch(`https://assignment-11-server-two-ecru.vercel.app/myCooks/${toyId}`, {
           method: "DELETE",
         })
           .then((res) => res.json())
@@ -70,7 +70,7 @@ const MyToys = () => {
     } = updateFormData;
   
     // Update the toy
-    fetch(`http://localhost:5000/myCooks/${selectedToy._id}`, {
+    fetch(`https://assignment-11-server-two-ecru.vercel.app/myCooks/${selectedToy._id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
@@ -138,7 +138,7 @@ const MyToys = () => {
   };
 
   useEffect(() => {
-    fetch("http://localhost:5000/myCooks")
+    fetch("https://assignment-11-server-two-ecru.vercel.app/myCooks")
       .then((res) => res.json())
       .then((data) => {
         // Filter the toys data based on the logged-in user's email
@@ -165,7 +165,7 @@ const MyToys = () => {
   };
 
   useEffect(() => {
-    fetch("http://localhost:5000/myCooks")
+    fetch("https://assignment-11-server-two-ecru.vercel.app/myCooks")
       .then((res) => res.json())
       .then((data) => {
         // Filter the toys data based on the logged-in user's email

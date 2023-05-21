@@ -10,7 +10,7 @@ const Category = () => {
 
   useEffect(() => {
     // Fetch toys data from API
-    fetch("http://localhost:5000/cooks")
+    fetch("https://assignment-11-server-two-ecru.vercel.app/cooks")
       .then((response) => response.json())
       .then((data) => setToys(data));
   }, []);

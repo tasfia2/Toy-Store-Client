@@ -9,7 +9,7 @@ const SingleData = () => {
 
   useEffect(() => {
     // Fetch toy data from API
-    fetch(`http://localhost:5000/cooks/${toyId}`)
+    fetch(`https://assignment-11-server-two-ecru.vercel.app/cooks/${toyId}`)
       .then((response) => response.json())
       .then((data) => setToyData(data));
   }, [toyId]);

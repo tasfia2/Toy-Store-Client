@@ -22,7 +22,7 @@ const AllToys = () => {
 
   const fetchToys = async () => {
     try {
-      const response = await fetch("http://localhost:5000/myCooks");
+      const response = await fetch("https://assignment-11-server-two-ecru.vercel.app/myCooks");
       const data = await response.json();
       setToys(data);
     } catch (error) {
